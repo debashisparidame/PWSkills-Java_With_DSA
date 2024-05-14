@@ -1,0 +1,24 @@
+/*
+  
+  1. What is mutable string in java explain with an example?
+
+*/
+
+Ans:-
+
+In Java, mutable strings are represented by the StringBuilder and StringBuffer classes. Unlike String objects, which are immutable and cannot be changed once created, StringBuilder and StringBuffer objects can be modified after they are created.
+
+
+Here's an example of a mutable string using StringBuilder:
+
+// Create a StringBuilder object
+StringBuilder sb = new StringBuilder("Hello");
+
+// Print the original string
+System.out.println("Original StringBuilder: " + sb);
+
+// Append to the StringBuilder
+sb.append(" World");
+
+// Print the modified StringBuilder
+System.out.println("Modified StringBuilder: " + sb);

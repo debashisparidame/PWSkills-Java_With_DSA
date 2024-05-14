@@ -1,0 +1,32 @@
+//2. How do you concatenate two strings in java and give an example?
+
+Ans -
+
+In Java, you can concatenate two strings in several ways:
+
+Using the + operator: This is the most common way to concatenate two strings in Java.
+
+Using the concat method: The String class provides a concat method to concatenate two strings.
+
+Using StringBuilder or StringBuffer: These classes provide an append method that can be used for concatenation. This is more efficient when concatenating many strings.
+
+
+//3. How do you find the length of a string in java Explain with an example?
+
+Ans -
+
+In Java, you can find the length of a string using the length() method provided by the String class. This method returns the number of characters in the string.
+
+//4. How do you compare two strings in java?
+
+Ans -
+
+In Java, you can compare two strings in several ways:
+
+Using the equals method: This method compares the content of the strings. It returns true if the strings are identical (same characters in the same order), and false otherwise.
+
+Using the equalsIgnoreCase method: This method is similar to equals, but it ignores the case of the characters.
+
+Using the compareTo method: This method compares the strings lexicographically (based on the Unicode value of the characters). It returns 0 if the strings are identical, a negative number if the first string comes before the second string, and a positive number if the first string comes after the second string.
+
+
