@@ -1,0 +1,107 @@
+//1. What is Encapsulation in java? Why is it called data hiding?
+
+Ans -
+Encapsulation in Java is one of the four fundamental principles of Object-Oriented Programming (OOP). It is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit. In encapsulation, the variables of a class are hidden from other classes, and can be accessed only through the methods of their current class.
+
+It's called data hiding because it prevents direct access to the class's fields (data members). The class's fields are made private, which means they cannot be accessed directly from outside the class. They can only be accessed through public methods (getters and setters) of the class. This way, encapsulation provides control over the data and protects it from being altered by external code in an unintended way.
+
+
+
+//2. What are the important features of Encapsulation?
+
+Ans -
+The important features of encapsulation in Java are:
+
+Data Hiding: The user will have no idea about the inner implementation of the class. It will not be visible to the user how the class is stored values in the variables. The user can only know that we are passing the values to a setter method and variables are getting initialized with that value.
+
+Increased Flexibility: We can make the variables of the class as read-only or write-only depending on our requirement. If we wish to make the variables as read-only then we have to omit the setter methods like setName(String name), setAge(int age) etc. from the above program or if we wish to make the variables as write-only then we have to omit the get methods like getName(), getAge() etc. from the above program.
+
+Reusability: Encapsulation also improves the re-usability and easy to change with new requirements.
+
+Testing code is easy: Encapsulated code is easy to test for unit testing.
+
+
+
+//3. What are getter and setter methods in java Explain with an example?
+
+Ans -
+Getter and Setter methods in Java are used to access and modify the private data members of a class. They are a part of the concept of Encapsulation in Java.
+
+Getter Method: This method is used to fetch or retrieve the value of a private variable. It's a public method that returns the value of the private variable.
+
+Setter Method: This method is used to set or update the value of a private variable. It's a public method that takes a parameter and assigns it to the private variable.
+
+Here's an example:
+
+public class Student 
+{
+    private String name;  // private variable
+
+    // Getter method
+    public String getName() {
+        return name;
+    }
+
+    // Setter method
+    public void setName(String newName) {
+        this.name = newName;
+    }
+}
+
+
+
+//4. What is the use of this keyword explain with an example?
+
+Ans -
+The this keyword in Java is a reference variable that refers to the current object. It has several uses:
+
+Accessing Instance Variables: When method parameters have the same name as class variables, the this keyword can be used to distinguish between the class variables and parameters.
+
+Invoking Constructor: Within a constructor, the this keyword can be used to call another constructor in the same class (constructor chaining).
+
+Passing Current Object as a Parameter: The this keyword can be used to pass the current class instance as a parameter to another method.
+
+Returning Current Class Instance: The this keyword can be used to return the current class instance from the method.
+
+
+
+//5. What is the advantage of Encapsulation in java?
+
+Ans -
+The advantages of encapsulation in Java are:
+
+Data Hiding: The user will not know the internal implementation of the class, as private fields are not visible outside the class. This increases security.
+
+Increased Flexibility and Reusability: The fields of a class can be made read-only or write-only according to our requirements. This is done by using only getter methods (for read-only) or only setter methods (for write-only). This flexibility helps in reusing the code.
+
+Maintainability: Encapsulation helps in maintaining the code. If any changes are required, we can perform those changes inside the class and those changes will not affect the areas of the code that use this class.
+
+Control over the data: With encapsulation, we can have control over the data by providing setter methods that can perform validation before setting the data, preventing the setting of incorrect or invalid data.
+
+
+
+//6. How to achieve encapsulation in java? Give an example.
+
+Ans -
+Encapsulation in Java is achieved by:
+
+Declaring the variables of a class as private.
+
+Providing public setter and getter methods to modify and view the variables' values.
+
+
+Here's an example:
+
+public class Employee {
+    private String name; // private variable
+
+    // Getter method
+    public String getName() {
+        return name;
+    }
+
+    // Setter method
+    public void setName(String name) {
+        this.name = name;
+    }
+}
