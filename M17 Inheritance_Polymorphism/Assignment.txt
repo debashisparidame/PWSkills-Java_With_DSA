@@ -1,0 +1,159 @@
+//1. What is Inheritance in java?
+
+Ans -
+Inheritance in Java is a fundamental object-oriented programming concept that allows one class to inherit fields (variables) and methods from another class. The main advantages of inheritance are code reusability and the ability to create more specific classes based on a general class.
+
+There are two types of classes in inheritance:
+
+Superclass (Parent class): The class whose features are inherited is known as a superclass, or a parent class.
+
+Subclass (Child class): The class that inherits the other class is known as a subclass, or a child class.
+
+The extends keyword is used to perform inheritance in Java.
+
+
+
+
+//2. What is superclass and subclass?
+
+Ans -
+In object-oriented programming, particularly in Java, a superclass and a subclass form the basis of inheritance, a fundamental concept that allows one class to inherit properties and methods from another.
+
+Superclass (Parent class): The class whose properties and methods are inherited is known as a superclass, or a parent class. It is the more general class in the relationship. For example, in a relationship between a Vehicle class and a Car class, Vehicle would be the superclass.
+
+Subclass (Child class): The class that inherits properties and methods from another class is known as a subclass, or a child class. It is the more specific class in the relationship. In the Vehicle and Car example, Car would be the subclass.
+
+
+
+
+//3. How is inheritane implemented/achived in java?
+
+Ans -
+Inheritance in Java is implemented using the extends keyword. Here's a step-by-step explanation:
+
+Define a class (the superclass). This class will have fields (variables) and methods that you want other classes to inherit.
+
+Define another class (the subclass) that extends the superclass. This class will inherit all the public and protected members (fields and methods) of the superclass. It can also define its own unique behavior.
+
+Create an instance of the subclass and call methods on it. You can call both the methods inherited from the superclass and the methods unique to the subclass.
+
+
+
+
+//4. What is polymorphism in java?
+
+Ans -
+Polymorphism in Java is a fundamental concept in object-oriented programming that allows objects of different types to be treated as objects of a common parent type. It enables one interface to be used for a general class of actions.
+
+There are two types of polymorphism in Java:
+
+Compile-time polymorphism (Static or Early Binding): This is achieved by function overloading. In function overloading, multiple methods have the same name but different parameters (either different number of parameters, or different types of parameters, or both).
+
+Runtime polymorphism (Dynamic or Late Binding): This is achieved by function overriding. In function overriding, the subclass has a method with the same name, number of parameters, and types of parameters as in its parent class.
+
+
+
+
+//5. Differentiate between method overloading and method overriding?
+
+Ans -
+Method Overloading and Method Overriding are two concepts in Java that allow a class to have two or more methods with the same name, but with different behaviors. Here's how they differ:
+
+Method Overloading:
+
+Method overloading is a compile-time polymorphism.
+In method overloading, methods must have the same name but different parameter lists (either different number of parameters, different types of parameters, or both).
+Method overloading can occur within the same class or in a subclass.
+Return type of methods does not matter in method overloading.
+It provides the 'early binding' or 'static binding'.
+
+Method Overriding:
+
+Method overriding is a runtime polymorphism.
+In method overriding, the method in the subclass has the same name, return type, and parameters as the one in its parent class.
+Method overriding can only occur in subclass.
+Return type of methods must be the same or a subtype of the method it is overriding.
+It provides the 'late binding' or 'dynamic binding'.
+
+
+
+
+//6. What is abstraction explain with example?
+
+Ans -
+Abstraction in Java is a fundamental concept of object-oriented programming (OOP) that deals with hiding the details and showing only the essential features of a particular object or concept.
+
+Abstraction can be achieved in two ways:
+
+Abstract Class (0-100% abstraction): An abstract class in Java is a class that cannot be instantiated (you cannot create an object of an abstract class). It can contain both abstract (method without a body) and non-abstract methods (method with a body).
+
+Interface (100% abstraction): An interface in Java is a completely abstract class that can only contain abstract methods.
+
+
+
+
+//7. What is the difference between abstract method and final method in java?
+
+Ans -
+An abstract method and a final method in Java are two different concepts that serve different purposes:
+
+Abstract Method:
+
+An abstract method is a method that is declared in an abstract class or an interface without an implementation (without a body).
+It must be overridden in a subclass unless the subclass is also abstract.
+It is used to achieve abstraction and to provide a blueprint for subclasses to implement specific functionality.
+
+Final Method:
+
+A final method is a method that is fully defined and cannot be overridden by subclasses.
+It is used to prevent method overriding when a method's behavior should not be changed by any subclass.
+It provides security against altering the implementation of a method.
+
+
+
+
+//8. What is the final class in java?
+
+Ans -
+A final class in Java is a class that has been declared with the keyword final. The main characteristic of a final class is that it cannot be subclassed. In other words, no other class can extend a final class. This is particularly useful when you want to create a class with certain behaviors and properties that should not be changed or overridden.
+
+
+
+
+//9. Difference between abstraction and encapsulation?
+
+Ans -
+Abstraction and encapsulation are two fundamental concepts in object-oriented programming, but they serve different purposes:
+
+Abstraction:
+
+Abstraction is about hiding the complexity and showing only the essential features of the object. In other words, it deals with what an object does.
+It helps to reduce programming complexity and effort.
+In Java, abstraction is achieved using abstract classes and interfaces.
+Encapsulation:
+
+Encapsulation is about wrapping data (variables) and code (methods) into a single unit called class. It hides the data within the object and prevents it from being accessed directly from outside the class.
+It provides control over the data by providing methods (getters and setters) to access and modify it.
+In Java, encapsulation is achieved using private fields and public getters and setters.
+
+
+
+
+//10. Difference between Runtime and Compile time polymorphism?
+
+Ans -
+Polymorphism in Java allows methods to perform different behaviors based on the object that is being referred to. There are two types of polymorphism: compile-time polymorphism and runtime polymorphism.
+
+Compile-time Polymorphism (Static or Early Binding):
+
+It is also known as method overloading.
+In compile-time polymorphism, the method to be invoked is determined at compile time.
+It provides performance benefits because the type of object and the method to be called are known at compile time.
+If there is any error, it will be caught at compile time.
+
+Runtime Polymorphism (Dynamic or Late Binding):
+
+It is also known as method overriding.
+In runtime polymorphism, the method to be invoked is determined at runtime based on the type of object.
+It provides flexibility because the specific method to be called is determined at runtime based on the actual object.
+If there is any error, it will be caught at runtime.
